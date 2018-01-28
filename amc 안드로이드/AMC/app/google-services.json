@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1059906606323",
+    "firebase_url": "https://amcpush-e5a98.firebaseio.com",
+    "project_id": "amcpush-e5a98",
+    "storage_bucket": "amcpush-e5a98.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1059906606323:android:8a59ca748537077c",
+        "android_client_info": {
+          "package_name": "example.amc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1059906606323-lj21lki4kdo0u2b0negn5h7p3ia78fk6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8WuRMAEbp4YlPHEnvGIYNQI4BWHVagyk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- Layout Definition : Layout 충첩 및 ETC -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+	android:background="#feffe2"
+	android:weightSum="10"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+
+	<!--<Button
+		android:id="@+id/goBookingButton"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="시사회 예매하기"/>-->
+
+	<com.beardedhen.androidbootstrap.BootstrapButton
+		android:id="@+id/previewListHeader"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_marginBottom="2dp"
+		android:gravity="center"
+		android:text="시사회"
+		app:bootstrapBrand="success"
+		android:clickable="false"
+		android:layout_weight=".7"
+		/>
+
+	<ListView
+		android:id="@+id/previewList"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="8.6"/>
+
+	<com.beardedhen.androidbootstrap.BootstrapButton
+		android:id="@+id/goPreviewBookingButton"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		app:bootstrapBrand="danger"
+		app:bootstrapText="시사회 예매하기"
+		app:roundedCorners="true"
+		app:bootstrapSize="md"
+		android:layout_margin="2dp"
+		android:layout_weight=".7"
+		android:layout_gravity="center"
+		/>
+</LinearLayout>

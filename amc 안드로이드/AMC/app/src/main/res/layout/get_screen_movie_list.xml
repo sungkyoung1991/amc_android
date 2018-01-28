@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#feffe2"
+    android:weightSum="10"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/movieListHeader"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="예매하실 영화를 선택해주세요"
+        app:bootstrapBrand="danger"
+        android:clickable="false"
+        android:layout_weight="1"
+        />
+
+    <ListView
+        android:id="@+id/my_listview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/movieListHeader" />
+
+</RelativeLayout>

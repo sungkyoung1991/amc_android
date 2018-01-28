@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/movieListHeader"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="좌석을 선택해주세요"
+        app:bootstrapBrand="danger"
+        android:clickable="false"
+        android:layout_weight="1"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="좌석은 최대 네자리까지 선택가능합니다."
+        android:textColor="@color/color_black"
+        android:textAlignment="center"
+        android:layout_margin="13dp"
+        android:textSize="16dp"/>
+
+    <HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fadeScrollbars="false">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="horizontal">
+
+            <GridView
+                android:id="@+id/gridView1"
+                android:layout_width="600dp"
+                android:layout_height="wrap_content"
+                android:columnWidth="40dp"
+                android:gravity="center"
+                android:numColumns="10"
+                android:padding="3dp"
+                android:scrollbars="horizontal"
+                android:horizontalSpacing="3dp"
+                android:verticalSpacing="3dp"
+                android:stretchMode="columnWidth"></GridView>
+        </FrameLayout>
+    </HorizontalScrollView>
+
+    <!--    <TextView
+            android:id="@+id/pay_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="다음단계"
+            android:textAlignment="center"
+            android:textColor="@color/color_gray"
+            android:textSize="25dp" />-->
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/pay_textview"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="NEXT"
+        android:textAlignment="center"
+        app:bootstrapBrand="danger"
+        app:roundedCorners="true"
+        app:showOutline="true"
+        android:layout_marginTop="18dp"/>
+    <!--  android:horizontalSpacing="10dp"
+      android:verticalSpacing="10dp"-->
+</LinearLayout>
+

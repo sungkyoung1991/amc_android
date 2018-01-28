@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="example.amc">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/amc"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:name=".kakao.GlobalApplication"
+        >
+
+<!--        android:theme="@style/Theme.AppCompat.Light.DarkActionBar"-->
+
+
+        <!--
+          android:screenOrientation="portrait"    : UI 세로 고정
+          android:screenOrientation="landscape" 	: UI 가로 고정
+        -->
+
+        <activity android:name=".IntroActivity"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustResize|adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".util.FirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".util.FirebaseMessagingServicE">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".user.LoginActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".user.LoginCheckActivity"
+            android:screenOrientation="portrait"  />
+
+        <activity
+            android:name=".LobbyActivity"
+            android:screenOrientation="portrait"  />
+
+        <activity
+            android:name=".movie.MovieListActivity"
+            android:screenOrientation="portrait"  />
+
+        <activity
+            android:name=".user.GetUserActivity"
+            android:screenOrientation="portrait"  />
+
+        <activity
+            android:name=".alarm.AlarmListActivity"
+            android:screenOrientation="portrait"  />
+
+        <activity
+            android:name=".movie.GetMovieActivity"
+            android:screenOrientation="portrait"  />
+
+        <activity
+            android:name=".movie.PreviewListActivity"
+            android:screenOrientation="portrait"  />
+
+        <activity
+            android:name=".booking.GetScreenMovieListActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".booking.SelectDateActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".booking.SelectTimeActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".booking.SelectSeatActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".booking.AddBookingActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="screenmovielist"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".booking.BookingConfirmActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="confirm"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".kakao.KakaoPayActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="amc" />
+            </intent-filter>
+        </activity>
+
+        <meta-data android:name="com.kakao.sdk.AppKey"
+            android:value="f85c0ca90c83d031cea77b995f078644" />
+
+    </application>
+
+
+    <!-- NetWork 시 Permission 필요 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+</manifest>

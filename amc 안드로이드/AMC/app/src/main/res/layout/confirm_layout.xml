@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="13dp"
+    android:background="#feffe2"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/info_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:lineSpacingExtra="15dip"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="예매가 완료되었습니다"
+        android:textColor="@color/color_black"
+        android:textAlignment="center"
+        android:padding="10dp"
+        android:background="@color/color_enable"
+        android:textSize="20dp"
+        android:layout_marginBottom="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_centerHorizontal="true"
+        android:text="예매하신 정보를 확인해주세요" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="130dp"
+        android:layout_height="300dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/info_textview"
+        android:orientation="vertical"
+        android:paddingHorizontal="10dp"
+        android:paddingTop="40dp"
+        android:layout_marginLeft="15dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="100dp"
+            android:layout_height="37dp"
+            android:text="영화제목"
+
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/selected_time"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:text="상영일시"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:text="상영관"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="100dp"
+            android:layout_height="37dp"
+            android:text="인원수"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="100dp"
+            android:layout_height="37dp"
+            android:text="좌석"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="결제 가격"
+            android:textSize="17dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="300dp"
+        android:paddingTop="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/info_textview"
+        android:orientation="vertical"
+        android:paddingLeft="15dp">
+
+        <TextView
+            android:id="@+id/selected_title_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:textColor="@color/color_black"
+            android:text="영화제목 여기"
+            android:textSize="17dp" />
+
+
+        <TextView
+            android:id="@+id/selected_time_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:textColor="@color/color_black"
+            android:text="상영시간여기"
+            android:textSize="17dp" />
+
+
+        <TextView
+            android:id="@+id/selected_theater_textview"
+            android:layout_width="wrap_content"
+            android:textColor="@color/color_black"
+            android:layout_height="37dp"
+            android:textSize="17dp"
+            android:text="000상영관" />
+
+
+        <TextView
+            android:id="@+id/selected_count_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:textColor="@color/color_black"
+            android:text="인원수 여기"
+            android:textSize="17dp" />
+
+
+        <TextView
+            android:id="@+id/selected_seats_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:textColor="@color/color_black"
+            android:text="좌석 여기"
+            android:textAlignment="center"
+            android:textSize="17dp" />
+
+
+        <TextView
+            android:id="@+id/selected_price_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="가격 여기"
+            android:textColor="@color/color_selected"
+            android:textSize="17dp" />
+
+    </LinearLayout>
+
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/request_pay_button"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_marginTop="38dp"
+        android:textStyle="bold"
+        android:text="메인으로 돌아가기"
+        app:bootstrapBrand="danger"
+        app:roundedCorners="true"
+        app:showOutline="true" />
+
+</RelativeLayout>

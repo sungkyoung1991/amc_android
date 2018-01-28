@@ -1,0 +1,396 @@
+<!-- Parent Layout -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#feffe2"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- first Child Layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+        <!-- create a Linear Layout with horizontal orientation and weightSum property -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <!-- place one TextView and one EditText inside layout using weight property -->
+                <com.beardedhen.androidbootstrap.BootstrapLabel
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:text="아이디"
+                    app:bootstrapBrand="regular"
+                    app:bootstrapHeading="h4"
+                    app:roundedCorners="true"
+                    android:layout_weight="0.6"
+                    />
+
+                <!--<TextView
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.6"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="아이디"
+                    android:textColor="@color/color_black"/>-->
+
+                <EditText
+                    android:id="@+id/userIdEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.4"
+                    android:hint="Id"
+                    android:imeOptions="actionNext"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"/>
+            </LinearLayout>
+            <!-- create a Linear Layout with horizontal orientation and weightSum property -->
+            <!-- second Child Layout -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <!-- place one TextView and one EditText inside layout using weight property -->
+                <com.beardedhen.androidbootstrap.BootstrapLabel
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:text="이 름"
+                    app:bootstrapBrand="regular"
+                    app:bootstrapHeading="h4"
+                    app:roundedCorners="true"
+                    android:layout_weight="0.6"
+                    />
+                <!--<TextView
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.6"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="이  름"
+                    android:textColor="@color/color_black"/>-->
+
+                <EditText
+                    android:id="@+id/userNameEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.4"
+                    android:hint="Name"
+                    android:imeOptions="actionNext"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+            <!-- create a Linear Layout with horizontal orientation and weightSum property -->
+            <!-- third Child Layout -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <!-- place one TextView and one EditText inside layout using weight property -->
+
+                <com.beardedhen.androidbootstrap.BootstrapLabel
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:text="성 별"
+                    app:bootstrapBrand="regular"
+                    app:bootstrapHeading="h4"
+                    app:roundedCorners="true"
+                    android:layout_weight="0.6"
+                    />
+
+                <!--<TextView
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.6"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="성  별"
+                    android:textColor="@color/color_black" />-->
+
+                <EditText
+                    android:id="@+id/genderEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.4"
+                    android:hint="Gender"
+                    android:imeOptions="actionNext"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"/>
+            </LinearLayout>
+            <!-- fourth Child Layout -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <!-- place one TextView and one EditText inside layout using weight property -->
+
+                <com.beardedhen.androidbootstrap.BootstrapLabel
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:text="주 소"
+                    app:bootstrapBrand="regular"
+                    app:bootstrapHeading="h4"
+                    app:roundedCorners="true"
+                    android:layout_weight="0.6"
+                    />
+
+                <!--<TextView
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.6"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="주  소"
+                    android:textColor="@color/color_black" />-->
+
+                <EditText
+                    android:id="@+id/addrEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.4"
+                    android:hint="Addr"
+                    android:imeOptions="actionNext"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"/>
+            </LinearLayout>
+            <!-- fourth Child Layout -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <!-- place one TextView and one EditText inside layout using weight property -->
+
+                <com.beardedhen.androidbootstrap.BootstrapLabel
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:text="상세주소"
+                    app:bootstrapBrand="regular"
+                    app:bootstrapHeading="h4"
+                    app:roundedCorners="true"
+                    android:layout_weight="0.6"
+                    />
+
+                <!--<TextView
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.6"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="상세주소"
+                    android:textColor="@color/color_black" />-->
+
+                <EditText
+                    android:id="@+id/addrDetailEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.4"
+                    android:hint="AddrDetail"
+                    android:imeOptions="actionNext"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"/>
+            </LinearLayout>
+            <!-- fourth Child Layout -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <!-- place one TextView and one EditText inside layout using weight property -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6">
+                    <com.beardedhen.androidbootstrap.BootstrapLabel
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:text="전화번호"
+                        app:bootstrapBrand="regular"
+                        app:bootstrapHeading="h4"
+                        app:roundedCorners="true"
+                        android:layout_weight="1"
+                        />
+                    <!--<TextView
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.6"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="전화번호"
+                        android:textColor="@color/color_black" />-->
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp">
+                    <EditText
+                        android:id="@+id/phone1EditText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:hint="phone1"
+                        android:imeOptions="actionNext"
+                        android:paddingLeft="5dp"
+                        android:gravity="center"
+                        android:singleLine="true"/>
+
+                    <EditText
+                        android:id="@+id/phone2EditText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:hint="phone2"
+                        android:imeOptions="actionNext"
+                        android:paddingLeft="5dp"
+                        android:gravity="center"
+                        android:singleLine="true"/>
+
+                    <EditText
+                        android:id="@+id/phone3EditText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:hint="phone3"
+                        android:imeOptions="actionNext"
+                        android:paddingLeft="5dp"
+                        android:gravity="center"
+                        android:singleLine="true"/>
+                </LinearLayout>
+            </LinearLayout>
+            <!-- fourth Child Layout -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <!-- place one TextView and one EditText inside layout using weight property -->
+
+                <com.beardedhen.androidbootstrap.BootstrapLabel
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:text="가입일자"
+                    app:bootstrapBrand="regular"
+                    app:bootstrapHeading="h4"
+                    app:roundedCorners="true"
+                    android:layout_weight="0.6"
+                    />
+
+                <!--<TextView
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.6"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="가입일"
+                    android:textColor="@color/color_black" />-->
+
+                <EditText
+                    android:id="@+id/userRegDateEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.4"
+                    android:hint="Email Id"
+                    android:imeOptions="actionNext"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"/>
+            </LinearLayout>
+            <!-- fourth Child Layout -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/modify"
+                    app:bootstrapBrand="info"
+                    app:bootstrapSize="lg"
+                    app:bootstrapText="수정"
+                    app:roundedCorners="true"
+                    android:layout_weight="1"
+                    android:gravity="center"/>
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/apply"
+                    app:bootstrapBrand="success"
+                    app:bootstrapSize="lg"
+                    app:bootstrapText="적용"
+                    app:roundedCorners="true"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:visibility="invisible"/>
+
+                <!--<Button
+                    android:id="@+id/modify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/color_gray"
+                    android:text="수정"
+                    android:textColor="@color/color_black"
+                    android:gravity="center"/>
+
+                <Button
+                    android:id="@+id/apply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/color_gray"
+                    android:text="적용"
+                    android:textColor="@color/color_black"
+                    android:visibility="gone"/>-->
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
